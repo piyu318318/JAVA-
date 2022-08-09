@@ -1,4 +1,5 @@
 //Question: make array elements unique by incrementing duplicates by 1
+
 import java.util.*;
 class makearrayelementsunique
 {
@@ -17,13 +18,15 @@ class makearrayelementsunique
 				{
 					if(arr[i] == arr[j])
 					{
-						arr[i] = arr[i] + 1;
+						arr[j] = arr[j] + 1;
 
 					}
 				}
 			}
 			n--;
 		}
+
+
 
 		for(int no:arr)
 		{
