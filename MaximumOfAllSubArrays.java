@@ -12,6 +12,24 @@ Explanation:
 5th contiguous subarray = {4 5 2} Max = 5
 6th contiguous subarray = {5 2 3} Max = 5
 7th contiguous subarray = {2 3 6} Max = 6
+
+example 2:
+Input:
+N = 10, K = 4
+arr[] = 8 5 10 7 9 4 15 12 90 13
+Output: 
+10 10 10 15 15 90 90
+Explanation: 
+1st contiguous subarray = {8 5 10 7}, Max = 10
+2nd contiguous subarray = {5 10 7 9}, Max = 10
+3rd contiguous subarray = {10 7 9 4}, Max = 10
+4th contiguous subarray = {7 9 4 15}, Max = 15
+5th contiguous subarray = {9 4 15 12}, 
+Max = 15
+6th contiguous subarray = {4 15 12 90},
+Max = 90
+7th contiguous subarray = {15 12 90 13}, 
+Max = 90
 */
 
 class MaximumOfAllSubArrays
@@ -19,18 +37,20 @@ class MaximumOfAllSubArrays
 	public static void main(String[] args) 
 	{
 		int arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6};
+		int k=3;
+		//int arr[] = {8, 5, 10, 7, 9, 4, 15, 12, 90, 13};
+		//int k=4;
 		int len = arr.length;
+		int done = len-k;
 		int i=0;
 		int firstindex;
 		int max=arr[i];
 		while(i<len)
 		{
-			for(int j=i;j<(i+3);j++) 
+			if(i== done+1)
+				break;
+			for(int j=i;j<(i+k);j++) 
 			{
-				if(j == len-1)
-				{
-					System.exit(0);
-				}
 				if(arr[j]>max)
 				{
 					max=arr[j];
