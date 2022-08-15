@@ -72,5 +72,22 @@ class List1
 			int i = interator1.next();
 			System.out.print(i+" ");
 		}
+
+		//reverse an arrray list
+		System.out.println();
+		Collections.sort(list1,Collections.reverseOrder());
+		System.out.println(list1);
+
+		//will remove all theh element residing in the list
+		list1.clear();
+		System.out.println();
+		System.out.println(list1);
+
+		//willl add at first 
+		//getFirst(list1);
+		System.out.println(list1);
+
+
+		
 	} 
 }
