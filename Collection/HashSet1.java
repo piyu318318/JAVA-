@@ -39,9 +39,5 @@ class HashSet1
 		{
 			System.out.print(it.next()+" ");
 		}
-
-		//
-
-
 	}
 }
