@@ -20,6 +20,6 @@ class GettersAndSetters
 		Student obj = new Student();
     		obj.setName("piyush");
 
-    	System.out.println(obj.getName());		
+    		System.out.println(obj.getName());		
 	}
 }
