@@ -18,7 +18,7 @@ class GettersAndSetters
 	public static void main(String[] args) 
 	{
 		Student obj = new Student();
-    	obj.setName("piyush");
+    		obj.setName("piyush");
 
     	System.out.println(obj.getName());		
 	}
