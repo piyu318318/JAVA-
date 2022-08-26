@@ -26,7 +26,7 @@ class Demo implements Piyush,Madhav
 	}
 }	
 
-class InheritanceInJava 
+class InterFaceInJava 
 {
 	public static void main(String[] args) 
 	{
