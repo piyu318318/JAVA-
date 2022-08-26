@@ -22,8 +22,7 @@ class Demo implements Piyush,Madhav
 
 	public void show()
 	{
-    System.out.println("value of n is :"+n);
-		System.out.println("madhav");
+   		System.out.println("madhav");
 	}
 }	
 
