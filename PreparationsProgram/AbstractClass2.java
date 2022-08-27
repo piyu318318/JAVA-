@@ -4,8 +4,10 @@
 abstract class Piyush
 {
 	abstract void show();
+	static int i=0;
 	Piyush()
 	{
+		System.out.println("i am piyush"+ i);//we can use staic variables in constructors.
 		System.out.println("i am piyush");
 	}
 }
