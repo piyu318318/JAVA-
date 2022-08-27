@@ -2,7 +2,7 @@
 //if a class having a one abstract method then class must be defined as abstract.
 //abstract class is called as in incomplete classs
 //concrete class is a complete class which  means it does not have abstract methods. 
-
+//WE can create constructor of an abstract class
 
 abstract class Country
 {
