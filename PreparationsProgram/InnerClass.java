@@ -11,9 +11,9 @@ class ABC
 	class XYZ
 	{
 		int y=20;
+		int z=x+=y; //can acess the x bcoz XYZ is in the scope of class ABC
 	}
 }
-
 
 class InnerClass
 {
@@ -23,5 +23,7 @@ class InnerClass
 		ABC.XYZ inner = outer.new XYZ();
 
 		System.out.println(inner.y+outer.x);
+		System.out.println(inner.z);
+
 	}
 }
