@@ -2,7 +2,8 @@
 //example if i create class piyush, class madhav in which i have intitialize n=10 and n=20 both class extennded by the class demo when we use n in demo class
 //the demo class will get confused which n to used. to overcome from this drawback java has interfaces 
 //default variables in interfaces are public static final
-//default variables in interfaces are public abstract 
+//default variables in interfaces are public abstract
+//inteface can have abstract methods but it cannot have its own method as abstract class has.
 
 interface Piyush
 {
