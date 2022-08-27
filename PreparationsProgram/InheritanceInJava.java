@@ -4,6 +4,7 @@
 //default variables in interfaces are public static final
 //default variables in interfaces are public abstract
 //inteface can have abstract methods but it cannot have its own method as abstract class has.
+//interfce is pure abstract class bcoz all methods in interface are abstract.
 
 interface Piyush
 {
