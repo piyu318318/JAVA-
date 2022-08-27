@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-class PalindromeStringUsingHashMap
+class PalindromeStringUsingArrayList
 {
 	public static void main(String[] args)throws IOException
 	{
