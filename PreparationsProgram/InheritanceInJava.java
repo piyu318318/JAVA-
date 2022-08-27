@@ -8,7 +8,7 @@ interface Piyush
 
 interface Madhav
 {
-  	int n=10;
+  	int n=10;//public static final
 	public void show();
 }
 
@@ -16,12 +16,13 @@ class Demo implements Piyush,Madhav
 {
 	public void display()
 	{
-		System.out.println("value of n is :"+n);
+		System.out.println("value of n is :"+n);//public static final so to access this variable use InterfaceName.varname 
 		System.out.println("piyush");
 	}
 
 	public void show()
 	{
+		System.out.println("value of n is :"+n);//public static final so to access this variable use InterfaceName.varname
    		System.out.println("madhav");
 	}
 }	
