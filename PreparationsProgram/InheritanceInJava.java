@@ -5,6 +5,7 @@
 //default variables in interfaces are public abstract
 //inteface can have abstract methods but it cannot have its own method as abstract class has.
 //interfce is pure abstract class bcoz all methods in interface are abstract.
+//we cannot instantiate abstract class means you we cannot create obj of an abstract class
 
 interface Piyush
 {
