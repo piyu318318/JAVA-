@@ -7,8 +7,7 @@ class Adsul {
         int n = Integer.parseInt(br.readLine());
         
         if(n%3 == 0)
-        {
-            
+        {       
             System.out.print("fizz");
         }
         if(n%5 == 0)
