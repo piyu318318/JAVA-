@@ -175,7 +175,7 @@ class Parking2
 					System.out.println("Sir/madam pls choose correct option !");
 			}
 
-			System.out.println("Time to park a vehicle :");
+			System.out.println("How much time you want to park a vehicle :");
 			while(true)
 			{
 				time = Integer.parseInt(br.readLine());
