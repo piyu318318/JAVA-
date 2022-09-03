@@ -1,5 +1,6 @@
 import java.io.*;
-import java.util.*;//for arraylist import util 
+import java.util.*;//for arraylist import util and current date
+import java.text.*;	// print date
 
 class Vehicle
 {
@@ -13,6 +14,10 @@ class Vehicle
 	}
 	void display()
 	{
+		SimpleDateFormat f=new SimpleDateFormat("dd/MM/yyyy");
+		Date date = new Date();
+		System.out.println("Todays Date : "f.format(date));
+
 		System.out.println("vehicle number is :"+vehiclenumber);
 		System.out.println("vehicle type is :"+vehicletype);
 	}
@@ -50,6 +55,7 @@ class Time extends Slot
 	void display()
 	{
 		super.display();
+
 		System.out.println("time of the vehicle is :"+time);
 	
 		if(time ==1)
