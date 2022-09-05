@@ -88,14 +88,14 @@ class Seats
 	
 		if(flag == 0)
 		{
-			countA = (280 * countA );
-			countB = (320 * countB );
-			countC = (300 * countC );
+			countA = (320 * countA );
+			countB = (280 * countB );
+			countC = (250 * countC );
 
 			double subtotal = countA + countB  + countC ; 
 			double service_tax =  subtotal * 0.14;//14 per service tax  
-			double Swachh_Bharat_Cess = subtotal * (0.5/100);//0.5 per swachh bharat tax
-			double Krishi_Kalyan_Cess = subtotal * (0.5/100);//0.5 per krishi kalyan tax
+			double Swachh_Bharat_Cess = subtotal * 0.005 ; //0.5 per swachh bharat tax
+			double Krishi_Kalyan_Cess = subtotal * 0.005 ;  //0.5 per krishi kalyan tax
 			double total  = subtotal + service_tax +  Swachh_Bharat_Cess + Krishi_Kalyan_Cess;
 			
 			
@@ -105,6 +105,7 @@ class Seats
 			System.out.println("service tax is :"+service_tax);
 			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
 			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
@@ -207,9 +208,9 @@ class Seats
 		{
 //			System.out.println("countA:"+ countA);
 //			System.out.println("countB :"+ countB);
-			countA = (280 * countA );
-			countB = (320 * countB );
-			countC = (300 * countC );
+			countA = (320 * countA );
+			countB = (280 * countB );
+			countC = (250 * countC );
 
 			double subtotal = countA + countB  + countC ; 
 			double service_tax =  subtotal * 0.14;//14 per service tax  
@@ -223,6 +224,7 @@ class Seats
 			System.out.println("service tax is :"+service_tax);
 			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
 			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
@@ -311,9 +313,9 @@ class Seats
 
 		if(flag == 0)
 		{
-			countA = (280 * countA );
-			countB = (320 * countB );
-			countC = (300 * countC );
+			countA = (320 * countA );
+			countB = (280 * countB );
+			countC = (250 * countC );
 
 			double subtotal = countA + countB  + countC ; 
 			double service_tax =  subtotal * 0.14;//14 per service tax  
@@ -325,6 +327,7 @@ class Seats
 			System.out.println("service tax is :"+service_tax);
 			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
 			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
@@ -399,8 +402,8 @@ class TicketMovie extends Seats
 					break;
 
 				case 4:
-					double revenue = totalmain - subtotalmain;
-					System.out.println("revenue is : "+revenue);					
+					
+					System.out.println("revenue is : "+subtotalmain);					
 					//double server_tax_revenue = revenue;
 					//double Swachh_Bharat_Cess= 
 					//double Krishi_Kalyan_Cess_revenue =
