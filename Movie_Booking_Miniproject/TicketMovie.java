@@ -5,6 +5,8 @@ class Seats
 {
 	static double totalmain =0;
 	static double subtotalmain=0;
+	static double service_tax_main=0;
+
 
 	void show1(String str,ArrayList a1,ArrayList b1,ArrayList c1)
 	{
@@ -98,18 +100,17 @@ class Seats
 			double Krishi_Kalyan_Cess = subtotal * 0.005 ;  //0.5 per krishi kalyan tax
 			double total  = subtotal + service_tax +  Swachh_Bharat_Cess + Krishi_Kalyan_Cess;
 			
-			
-
-			System.out.println("\n");
-			System.out.println("subtotal is :"+ subtotal);
-			System.out.println("service tax is :"+service_tax);
-			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
-			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+			System.out.println("Print: Successfully Booked - Show 1");
+			System.out.println("subtotal: Rs "+ subtotal);
+			System.out.println("service tax @14% Rs:"+service_tax);
+			System.out.println("swachh bharat cess @0.5%: Rs:"+Swachh_Bharat_Cess);
+			System.out.println("krishi kalyan cess @0.5% Rs:"+Krishi_Kalyan_Cess);
 			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
 			subtotalmain = subtotalmain + subtotal;
+			service_tax_main = service_tax_main +service_tax;
 		}
 	
 	}
@@ -220,15 +221,19 @@ class Seats
 	
 			
 
-			System.out.println("subtotal is :"+ subtotal);
-			System.out.println("service tax is :"+service_tax);
-			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
-			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+			
+			System.out.println("Print: Successfully Booked - Show 2");
+			System.out.println("subtotal: Rs "+ subtotal);
+			System.out.println("service tax @14% Rs:"+service_tax);
+			System.out.println("swachh bharat cess @0.5%: Rs:"+Swachh_Bharat_Cess);
+			System.out.println("krishi kalyan cess @0.5% Rs:"+Krishi_Kalyan_Cess);
 			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
 			subtotalmain = subtotalmain + subtotal;
+			service_tax_main = service_tax_main +service_tax;
+
 		}
 	}
 
@@ -322,16 +327,18 @@ class Seats
 			double Swachh_Bharat_Cess = subtotal * (0.5/100);//0.5 per swachh bharat tax
 			double Krishi_Kalyan_Cess = subtotal * (0.5/100);//0.5 per krishi kalyan tax
 			double total  = subtotal + service_tax +  Swachh_Bharat_Cess + Krishi_Kalyan_Cess;
-	
-			System.out.println("subtotal is :"+ subtotal);
-			System.out.println("service tax is :"+service_tax);
-			System.out.println("swachh bharat cess is :"+Swachh_Bharat_Cess);
-			System.out.println("krishi kalyan cess is :"+Krishi_Kalyan_Cess);
+		
+			System.out.println("Print: Successfully Booked - Show 3");
+			System.out.println("subtotal: Rs "+ subtotal);
+			System.out.println("service tax @14% Rs:"+service_tax);
+			System.out.println("swachh bharat cess @0.5%: Rs:"+Swachh_Bharat_Cess);
+			System.out.println("krishi kalyan cess @0.5% Rs:"+Krishi_Kalyan_Cess);
 			total = Math.ceil(total);
 			System.out.println("total is :"+total);
 
 			totalmain = totalmain + total;
 			subtotalmain = subtotalmain + subtotal;
+			service_tax_main = service_tax_main +service_tax;
 
 		}
 	}
@@ -403,10 +410,14 @@ class TicketMovie extends Seats
 
 				case 4:
 					
-					System.out.println("revenue is : "+subtotalmain);					
-					//double server_tax_revenue = revenue;
-					//double Swachh_Bharat_Cess= 
-					//double Krishi_Kalyan_Cess_revenue =
+					double service_tax_on_revenue = subtotalmain * 0.005;//0.5 per 
+					double Swachh_Bharat_on_revenue =   subtotalmain * 0.005;//0.5 per 
+
+					System.out.println("revenue Rs : "+subtotalmain);
+					System.out.println("service tax Rs :" +service_tax_main); 
+					System.out.println("service tax Rs :" +service_tax_on_revenue); 
+					System.out.println("service tax Rs :" + Swachh_Bharat_on_revenue); 
+					System.out.println("\n");
 
 				case 5:System.exit(0); 		
 			}
