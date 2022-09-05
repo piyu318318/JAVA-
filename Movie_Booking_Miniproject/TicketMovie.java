@@ -73,10 +73,13 @@ class Seats
 
 					i++;
 				}
+				
+				System.out.println("\n");
 				System.out.println(a1);
 				System.out.println(b1);
 				System.out.println(c1);
-				System.out.println(str+" All seats are allocated ");		
+				System.out.println(str+" All seats are allocated ");
+				System.out.println("\n");
 			}
 			else
 			{
@@ -190,10 +193,13 @@ class Seats
 
 					i++;
 				}
+				
+				System.out.println("\n");
 				System.out.println(a2);
 				System.out.println(b2);
 				System.out.println(c2);
-				System.out.println("All seats are allocated ");		
+				System.out.println("All seats are allocated ");	
+				System.out.println("\n");
 			}
 			else
 			{
@@ -301,10 +307,13 @@ class Seats
 
 					i++;
 				}
+				
+				System.out.println("\n");
 				System.out.println(a3);
 				System.out.println(b3);
 				System.out.println(c3);
-				System.out.println("All seats are allocated ");		
+				System.out.println("All seats are allocated ");	
+				System.out.println("\n");
 			}
 
 			else
