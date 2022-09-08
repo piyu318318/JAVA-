@@ -6,7 +6,7 @@ class UniqueYearsInString
 	{
 		Set <String> set1 = new HashSet<String>();
 
-		String str1="UN was established on 24-10-1945.India got freedom on 15-08-1947.";
+		String str1="UN was established on 24-10-1945.India got freedom on 15-08-194712.";
 		
 		StringBuffer s1 = new StringBuffer(str1);
 		StringBuffer s2 = new StringBuffer();
@@ -22,14 +22,16 @@ class UniqueYearsInString
 
 			count =0;
 
-			if(Character.isDigit(s1.charAt(i)))
+			if((s1.charAt(i)) == '-' && (!Character.isDigit(s1.charAt(i+5))))
 			{
-				if(Character.isDigit(s1.charAt(i+1)) && Character.isDigit(s1.charAt(i+2)) && Character.isDigit(s1.charAt(i+3)))
+				if(Character.isDigit(s1.charAt(i+1)) && Character.isDigit(s1.charAt(i+2)) && Character.isDigit(s1.charAt(i+3)) && Character.isDigit(s1.charAt(i+4)))
 				{
-					s2.append(s1.charAt(i));
+				//	s2.append(s1.charAt(i));
 					s2.append(s1.charAt(i+1));
 					s2.append(s1.charAt(i+2));
 					s2.append(s1.charAt(i+3));
+					s2.append(s1.charAt(i+4));
+
 					count++;
 				}
  			}
@@ -38,6 +40,7 @@ class UniqueYearsInString
 				s2.append(' ');
 
 		}
+
 		//now convert stringbuffer into string
 
 		String str = s2.toString();
@@ -53,5 +56,5 @@ class UniqueYearsInString
 		}
 
 		System.out.println(set1);
-	}
+	}	
 }
