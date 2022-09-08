@@ -22,11 +22,11 @@ class UniqueYearsInString
 
 			count =0;
 
-			if((s1.charAt(i)) == '-' && (!Character.isDigit(s1.charAt(i+5))))
+			if((s1.charAt(i)) == '-' && (!Character.isDigit(s1.charAt(i+5)))) 
 			{
 				if(Character.isDigit(s1.charAt(i+1)) && Character.isDigit(s1.charAt(i+2)) && Character.isDigit(s1.charAt(i+3)) && Character.isDigit(s1.charAt(i+4)))
 				{
-				//	s2.append(s1.charAt(i));
+				//	s2.append(s1.charAt(i)); //we dont want - to get print
 					s2.append(s1.charAt(i+1));
 					s2.append(s1.charAt(i+2));
 					s2.append(s1.charAt(i+3));
