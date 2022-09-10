@@ -21,15 +21,74 @@ Example:
 return false)
 */
 
+class Stringreal
+{
+	public static void main(String[] args) 
+	{
+		String str1 = "AACD";
+		String str2 = "ACDA";
+
+		StringBuffer strbuff = new StringBuffer(str1);
+
+		for (int i=0;i<str2.length();i++) 
+		{
+			strbuff.append(str2.charAt(i));	
+		}
+
+		int j=0;
+		int k=0;
+		int count=0;
+
+
+		//strbuff = abacdcdaba
+		//str2 = cdaba
+
+		for (int i=0;i<strbuff.length();i++) 
+		{
+			if( i == (strbuff.length()- str2.length()))
+				break;
+			k=i;
+			j=0;
+			count=0;
+
+			while(j<str2.length())
+			{
+
+				if(strbuff.charAt(k) == str2.charAt(j))
+				{
+					j++;
+					k++;
+					count++;
+					if(count == str2.length())
+					{
+						System.out.println("found string2 in stringbuffer at location :"+i);
+						System.out.println(str2);						
+					}
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+
+	}
+}
+
+/*
+//second method 
 class StringRelations
 {
 	public static void main(String[] args) 
 	{
+		ArrayList <Character> a1 = new ArrayList<>();
+
 		String str1 = "abacd";
 		String str2 = "cdaba";
 		StringBuffer s1 =new StringBuffer(str1);
 
 		char ch;
+
 		for (int i=0;i<str2.length();i++) 
 		{
 			ch = str2.charAt(i);
@@ -68,27 +127,14 @@ class StringRelations
 			if(count == str2.length())
 			{
 				storestrateindex = i;
+				System.out.println(storestrateindex);
 			}
 
 		}
-
-	//System.out.println(storestrateindex);
-
-	
 
 
 	}
 }
 
-/*
-if(flag == 1)
-		{
-			for(int i=storestrateindex;i<str2.length();i++) 
-			{
-				System.out.print(s1.charAt(i));	
-			}
-		}
-		else
-			System.out.println("false");
 
-			*/
+*/
