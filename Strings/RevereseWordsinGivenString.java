@@ -24,3 +24,34 @@ class RevereseWordsinGivenString
 
 	}
 }
+
+
+//second way 
+/*
+
+
+class ReverseString
+{
+	public static void main(String[] args) 
+	{
+		String str = "india is great you know na !";
+
+		String strarr[] = str.split(" ");
+
+		StringBuffer strbuff = new StringBuffer("");
+
+		String temp;
+		
+		for(int i=strarr.length-1;i>=0;i--) 
+		{
+			strbuff.append(strarr[i]);
+			strbuff.append(' ');
+
+			//System.out.print(strarr[i]+" ");
+		}
+
+			System.out.print(strbuff);
+
+	}
+}
+*/
