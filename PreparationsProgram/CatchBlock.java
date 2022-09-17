@@ -1,4 +1,4 @@
-//following will error generarte
+//following will error generarte bocoz already Superclass Exception is catched the arithmatic error so.
 /*
 C:\java1\java remain concepts>javac CatchBlock.java
 CatchBlock.java:14: error: exception ArithmeticException has already been caught
