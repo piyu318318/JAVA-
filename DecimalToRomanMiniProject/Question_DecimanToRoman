@@ -1,0 +1,84 @@
+We are looking for people who can write code that has flexibility built-in, by following the
+principles of object orientation and clean code.
+It is important to note that we are not looking for a GUI and we will not assess you on
+the capabilities around code required to do the I/O. But do note that it is very important to
+keep the presentation concerns separate from the domain or business logic. So while
+building the solution, the focus should be on the overall design of the system.
+Before you submit your code, please make sure to go through the following points and
+ensure that your code focuses on the attributes we are looking for which are as follows:
+● Is object behavior/responsibility distinguished from its state and is the state
+encapsulated?
+● Is your code simple enough to understand and maintain?
+● Is your code DRY enough?
+● Is your code clean enough? More info at
+https://dzone.com/articles/clean-code-robert-c-martins-way
+Important Notes
+1. Do not develop a web application or web service.
+2. We expect you to develop a simple console application that works in memory.
+Although try to design the application in such a way that you should be able to
+incorporate the database easily later without any impact on other parts of the
+system.
+3. Do not use any framework while developing the solution except testing frameworks.
+4. You will get extra brownie points if you use packaging or build tools like
+Maven/Gradle. In case you are not familiar with build tools, please package all the
+dependencies with your project so that we can build/run the solution with minimal
+effort. (This point is only valid if you are writing the code in Java rest can
+ignore this point)
+Roman to Decimal Coding Problem
+Problem Statement
+(Average time to write a solution 2-3 hrs)
+Our client has started to work with roman numbers but, they are not used to roman
+numbers and they want to build the roman calculator for which requirements are as below:
+- Users can just check the decimal number for the given roman numbers
+- Users can add multiple roman numbers
+- Users can subtract multiple numbers (Numbers will be subtracted from left to right
+in the given list)
+- Users can multiply multiple roman numbers (Numbers will be multiplied from left
+to right in the given list)
+- Users can divide multiple numbers Numbers will be divided from left to right in the
+given list)
+Users might want to see the history of all the previous operations in future so design
+keeping this aspect in mind. However for now we don’t need to develop this feature.
+Note:
+1. Output for the above addition, subtraction, multiplication and division needs
+to be shown in both roman and decimal numbers. And currently we’ll build an
+app that supports numbers up to M (1000). Numbers can be provided as the
+comma-separated list as Input for all the operations.
+2. All the operations can take more than 2 inputs
+3. Except for option 1(Convert to decimal number), convert the value back to a
+roman number. Ex. X+X = 20, XX
+Below is the sample Input/Output for the console app.
+====== Roman to Decimal Calculator ======
+1. Convert to decimal number
+2. Add
+3. Subtract
+4. Multiply
+5. Divide
+Enter the option: 1
+Enter numbers: XXI, IC
+Roman to Decimal Coding Problem
+21, 99
+Enter the option: 2
+Enter numbers: X, XII, IV
+26
+In Roman: XXVI
+Enter the option : 3
+Enter numbers : X,I,V
+4
+In Roman: IV
+Enter the option : 3
+Enter numbers: X, V, VII
+-2
+In Roman: Invalid
+Enter the option: 4
+Enter numbers: II, VI, X
+120
+In Roman: CXX
+Enter the option: 5
+Enter numbers: M, C, II
+5
+In Roman: V
+Enter the option: 5
+Enter numbers: X, V, IV
+0.5
+In Roman: Invalid
