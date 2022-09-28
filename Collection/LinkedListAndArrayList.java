@@ -170,8 +170,7 @@ class LinkedListAndArrayList
 								element = Integer.parseInt(br.readLine());
 								l1.addLast(element);
 
-								break;
-//7.remove() 8.remove(int index) 9.remove(Object o) 10.removeFirst()  12.removeLast() 13.removeLastOccurrence(Object o) 14.Display LinkedList 15.exit								
+								break;							
 							
 							case 7:
 								l1.remove();
