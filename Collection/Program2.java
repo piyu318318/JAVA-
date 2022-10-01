@@ -1,0 +1,52 @@
+//Accpet different n colors from use and store them in a collection. Dsiplay them as a sorted order.The collection should not accpet duoblicate elements.
+//display elemrnts using iterator.
+
+import java.util.*;
+import java.io.*;
+
+class Program2
+{
+	public static void main(String[] args) throws IOException
+	{
+		TreeSet <String> s1 = new TreeSet <>();
+		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
+		String color ;
+
+		while(true)
+		{
+			System.out.println("Enter your choice :");
+			System.out.println("1.for add color 2.for display all colors 3.Exit");
+			int ch = Integer.parseInt(br.readLine());
+			
+			switch(ch)
+			{
+				case 1:
+					try
+					{
+						System.out.println("Enter a color :");
+						color = br.readLine();
+						s1.add(color);
+						
+					}
+					catch(NumberFormatException e)
+					{
+						System.out.println("not a string");
+						System.out.println("not added");
+
+					}
+					break;
+				case 2:
+					//Collection.sort(s1);
+					Iterator value = s1.iterator();
+					while (value.hasNext()) 
+					{
+            			System.out.println(value.next());
+        			}
+					break;
+				case 3:
+					System.exit(0);
+					break;
+			}
+		}
+	}
+}
