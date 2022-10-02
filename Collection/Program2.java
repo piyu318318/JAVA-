@@ -4,14 +4,14 @@
 import java.util.*;
 import java.io.*;
 
-class Program2
+ class Program2
 {
 	public static void main(String[] args) throws IOException
 	{
 		TreeSet <String> s1 = new TreeSet <>();
 		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
 		String color ;
-
+		int flag =0;
 		while(true)
 		{
 			System.out.println("Enter your choice :");
@@ -25,15 +25,17 @@ class Program2
 					{
 						System.out.println("Enter a color :");
 						color = br.readLine();
-						s1.add(color);
-						
+						if(s1.contains(color))
+							System.out.println("color aleady exist");
+						else
+							s1.add(color);
 					}
 					catch(NumberFormatException e)
 					{
 						System.out.println("not a string");
-						System.out.println("not added");
-
+						System.out.println("not added ");
 					}
+
 					break;
 				case 2:
 					//Collection.sort(s1);
