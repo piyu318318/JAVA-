@@ -14,15 +14,14 @@ class Two_Pointer_algorithm
 {
   	public static void main(String[] args) 
   	{
-  		int nums[] = {-3,2,3,3,6,8,15};	
+  		int nums[] = {-3,2,3,3,6,8,15};	 
   		Two_Pointer_algorithm.twosum(nums,6);
   	}
 
   	static void twosum(int nums[], int target)
   	{
-  		int start=0;
-  		int end = nums.length -1;
-  		int result[] = new int[2];
+  		int start=0; /start pointer 
+  		int end = nums.length -1;  //end pointer   
 
   		while(start<end)
   		{
