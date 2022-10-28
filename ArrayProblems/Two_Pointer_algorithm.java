@@ -9,26 +9,31 @@ O(n log n) time complexity or even better which is O(n)
 opposite directional -one pointer starats from beginning and other pointers starts from end.
 equi directional - both pointers starts from beggining.
 */
+/*
+Given an array of integers that is already sorted in ascending order.
+find two numbers such that they add up to a specific target number.
+*/
 
 class Two_Pointer_algorithm
 {
   	public static void main(String[] args) 
   	{
-  		int nums[] = {-3,2,3,3,6,8,15};	 
+  		int nums[] = {-3,2,3,3,6,8,15};	
   		Two_Pointer_algorithm.twosum(nums,6);
   	}
 
   	static void twosum(int nums[], int target)
   	{
-  		int start=0; /start pointer 
-  		int end = nums.length -1;  //end pointer   
+  		int start=0;
+  		int end = nums.length -1;
+  		int result[] = new int[2];
 
   		while(start<end)
   		{
   			int sum  = nums[start] + nums[end];
   			if(sum == target)
   			{
-  				System.out.println("start is :"+(start + 1)+"end is :"+(end +1));
+  				System.out.println("start is :"+(start + 1)+"\nend is :"+(end +1));
   				break;
   			}
   			else if(sum < target)
